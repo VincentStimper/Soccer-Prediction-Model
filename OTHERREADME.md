@@ -13,4 +13,4 @@ To model the data I assumed the goals to by Poisson distributed, i.e.
 $$
 P_\text{m}(a=n|\mathcal{A},\mathcal{B})=e^{-\mu_{\mathcal{A},\mathcal{B}}}\frac{\mu_{\mathcal{A},\mathcal{B}}^n}{n!},
 $$
-and so on. The model coefficients $\mu_{\mathcal{A},\mathcal{B}}$ are obtained by a generalized linear model using the team and the opponent as features. Each match is weighted by $e^{-\lambda t}$ where $t$ is the time when the match happend and $\lambda$ a constant. This constant is obtained by trying different values and choosing the one with the highest accuracy on a test set.
+and so on. This is reasonable since the number of occurences of events happening with a constant rate $\mu$ are Poisson distributed. The model coefficients $\mu_{\mathcal{A},\mathcal{B}}$ are obtained by a generalized linear model using the team and the opponent as features. Each match is weighted by $e^{-\lambda t}$ where $t$ is the time when the match happend and $\lambda$ a constant. This constant is obtained by trying different values and choosing the one with the highest accuracy on a test set.
