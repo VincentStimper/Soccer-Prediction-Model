@@ -20,21 +20,23 @@ for (y in years) {
   goalA <- c(goalA, as.numeric(tab$FTHG))
   goalB <- c(goalB, as.numeric(tab$FTAG))
 }
-homeTeam <- c(teamA, teamB)
-awayTeam <- c(teamB, teamA)
-goal <- c(goalA, goalB)
 dates <- as.Date(dates, format = "%d/%m/%y")
 numTeams <- length(levels(as.factor(teamA)))
 load("../Simple Poisson model/Parameter/lambda.RData")
 
 # Calculate coefficients
 w <- exp(- lambdaOpt * as.numeric(max(dates) - dates))
-w <- rep(w, 2)
-fit <- glm(goal ~ 0 + homeTeam + awayTeam, family = poisson(link = "log"), weights = w)
-modelCoef <- exp(c(coef(fit)[1 : numTeams], 0, coef(fit)[- (1 : numTeams)]))
-names(modelCoef) <- gsub("homeTeam", "attack", names(modelCoef))
-names(modelCoef) <- gsub("awayTeam", "defend", names(modelCoef))
-names(modelCoef)[numTeams + 1] <- gsub("attack", "defend", names(modelCoef)[1])
+fitA <- glm(goalA ~ 0 + teamA + teamB, family = poisson(link = "log"), weights = w)
+modelCoefA <- exp(c(coef(fitA)[1 : numTeams], 0, coef(fitA)[- (1 : numTeams)]))
+names(modelCoefA) <- gsub("teamA", "attackHome", names(modelCoefA))
+names(modelCoefA) <- gsub("teamB", "defendAway", names(modelCoefA))
+names(modelCoefA)[numTeams + 1] <- gsub("attackHome", "defendHome", names(modelCoefA)[1])
+fitB <- glm(goalB ~ 0 + teamB + teamA, family = poisson(link = "log"), weights = w)
+modelCoefB <- exp(c(coef(fitB)[1 : numTeams], 0, coef(fitB)[- (1 : numTeams)]))
+names(modelCoefB) <- gsub("teamB", "attackAway", names(modelCoefB))
+names(modelCoefB) <- gsub("teamA", "defendHome", names(modelCoefB))
+names(modelCoefB)[numTeams + 1] <- gsub("attackAway", "defendAway", names(modelCoefB)[1])
+modelCoef <- c(modelCoefA, modelCoefB)
 
 # Save model coefficients
 save(modelCoef, file = "../Simple Poisson model/Parameter/modelCoef.RData")

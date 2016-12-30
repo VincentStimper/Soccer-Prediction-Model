@@ -1,43 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string-array name="lambda_attack">
-		<item>1.09762240205156</item>
-		<item>2.30000705163628</item>
-		<item>1.35518641881483</item>
-		<item>0.958683183764497</item>
-		<item>2.01114651192292</item>
-		<item>1.18732302384711</item>
-		<item>1.17973171174739</item>
-		<item>1.44694734758647</item>
-		<item>1.09985561063976</item>
-		<item>1.13452860340952</item>
-		<item>1.40016061122726</item>
-		<item>0.911184283321097</item>
-		<item>1.12420410778433</item>
-		<item>1.90021229106816</item>
-		<item>1.63694022507254</item>
-		<item>1.33838904923487</item>
-		<item>1.4859978471757</item>
-		<item>1.44908590986717</item>
+	<string-array name="lambda_attack_home">
+		<item>1.14285711472219</item>
+		<item>2.5528080765804</item>
+		<item>1.3665173811977</item>
+		<item>0.808241093527345</item>
+		<item>2.0515054826425</item>
+		<item>1.36062202179026</item>
+		<item>1.25465044643687</item>
+		<item>1.65999912791366</item>
+		<item>1.10711004783702</item>
+		<item>1.11711983305486</item>
+		<item>1.48433152597621</item>
+		<item>1.06444406452792</item>
+		<item>1.15816383077891</item>
+		<item>1.83096386626627</item>
+		<item>1.73416554358644</item>
+		<item>1.38589341912327</item>
+		<item>1.72876479341982</item>
+		<item>1.55524559936432</item>
 	</string-array>
-	<string-array name="lambda_defence">
+	<string-array name="lambda_defence_home">
 		<item>1</item>
-		<item>0.502254536239562</item>
-		<item>1.3761979553567</item>
-		<item>1.18870330842235</item>
-		<item>0.758564422568147</item>
-		<item>1.08089799103105</item>
-		<item>1.11233004653661</item>
-		<item>0.932405728073911</item>
-		<item>1.19013429510578</item>
-		<item>1.0468779636281</item>
-		<item>1.19040414710589</item>
-		<item>0.987302830434094</item>
-		<item>1.09468209782104</item>
-		<item>0.684247432044893</item>
-		<item>0.898662986192906</item>
-		<item>1.01462977541407</item>
-		<item>0.958380284360777</item>
-		<item>1.06247748903045</item>
+		<item>0.459697317851757</item>
+		<item>1.23607682107187</item>
+		<item>1.18179595712853</item>
+		<item>0.670575328751644</item>
+		<item>1.04375531493481</item>
+		<item>1.03250816176531</item>
+		<item>0.814662170069475</item>
+		<item>1.13232250285055</item>
+		<item>0.953313151048955</item>
+		<item>1.10708482037154</item>
+		<item>0.957645938761235</item>
+		<item>0.88817553996406</item>
+		<item>0.535184619189065</item>
+		<item>0.916319237457658</item>
+		<item>0.920502526839529</item>
+		<item>0.821335601205817</item>
+		<item>0.992454602241215</item>
+	</string-array>
+	<string-array name="lambda_attack_away">
+		<item>1.06337272265412</item>
+		<item>2.03221076621978</item>
+		<item>1.36289787676545</item>
+		<item>1.15213107417269</item>
+		<item>1.99304308019758</item>
+		<item>1.00733893497443</item>
+		<item>1.11770309302948</item>
+		<item>1.21675082342554</item>
+		<item>1.10762606756289</item>
+		<item>1.16633011488193</item>
+		<item>1.31275609537943</item>
+		<item>0.752520784641489</item>
+		<item>1.10581520547245</item>
+		<item>1.96080323693581</item>
+		<item>1.55406832287304</item>
+		<item>1.30971663446588</item>
+		<item>1.23124945992066</item>
+		<item>1.34601337402441</item>
+	</string-array>
+	<string-array name="lambda_defence_away">
+		<item>1</item>
+		<item>0.539168940674187</item>
+		<item>1.49370955150788</item>
+		<item>1.19708828863329</item>
+		<item>0.833483254737596</item>
+		<item>1.11244546255498</item>
+		<item>1.17364164689872</item>
+		<item>1.03355303069286</item>
+		<item>1.24089629378204</item>
+		<item>1.11980358180771</item>
+		<item>1.25675271369571</item>
+		<item>1.00744195182627</item>
+		<item>1.26155167571636</item>
+		<item>0.786488882761306</item>
+		<item>0.874120352883217</item>
+		<item>1.08997599868603</item>
+		<item>1.07732935498405</item>
+		<item>1.11922352489555</item>
 	</string-array>
 </resources>
