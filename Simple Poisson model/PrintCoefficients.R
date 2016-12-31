@@ -1,42 +1,37 @@
-# Print model coefficient in an resource xml file usable for app
-
-
-# Teams of current season (2016/17)
-teams <- c("Augsburg", "Bayern", "Bremen", "Darmstadt", "Dortmund",
-           "Frankfurt", "Freiburg", "M'gladbach", "Hamburg", "Hertha",
-           "Hoffenheim", "Ingolstadt", "Koln", "Leipzig", "Leverkusen",
-           "Mainz", "Schalke", "Wolfsburg")
-
-# Load model coefficients
-setwd(dirname(sys.frame(1)$ofile))
-setwd("Parameter")
-load("modelCoef.RData")
-modelCoefNames <- names(modelCoef)
-
-# Extract relevant coefficients
-indAttackHome <- grep("attackHome", modelCoefNames)
-indDefendHome <- grep("defendHome", modelCoefNames)
-indAttackAway <- grep("attackAway", modelCoefNames)
-indDefendAway <- grep("defendAway", modelCoefNames)
-attackHome <- (modelCoef[indAttackHome])[sapply(teams, function(x) grep(x, modelCoefNames[indAttackHome]))]
-defendHome <- (modelCoef[indDefendHome])[sapply(teams, function(x) grep(x, modelCoefNames[indDefendHome]))]
-attackAway <- (modelCoef[indAttackAway])[sapply(teams, function(x) grep(x, modelCoefNames[indAttackAway]))]
-defendAway <- (modelCoef[indDefendAway])[sapply(teams, function(x) grep(x, modelCoefNames[indDefendAway]))]
-
-# Print coefficients to file
-close(file("modelCoefficients.xml", open = "w"))
-fileConn <- file("modelCoefficients.xml", open = "a")
-writeLines(c("<?xml version=\"1.0\" encoding=\"utf-8\"?>", "<resources>", "\t<string-array name=\"lambda_attack_home\">"), fileConn)
-sapply(attackHome, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
-writeLines(c("\t</string-array>", "\t<string-array name=\"lambda_defence_home\">"), fileConn)
-sapply(defendHome, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
-writeLines(c("\t</string-array>", "\t<string-array name=\"lambda_attack_away\">"), fileConn)
-sapply(attackAway, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
-writeLines(c("\t</string-array>", "\t<string-array name=\"lambda_defence_away\">"), fileConn)
-sapply(defendAway, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
-writeLines(c("\t</string-array>", "</resources>"), fileConn)
-close(fileConn)
-
-# Copy file to resource folder
-file.copy("modelCoefficients.xml", "../../../SoccerPrediction/app/src/main/res/values/modelCoefficients2.xml")
+PrintCoefficients <- function(leagueLabel, teamNames) {
+  ## Print model coefficient in an resource xml file usable for app
+  
+  # Load model coefficients
+  load(paste0("Parameter/modelCoef", leagueLabel, ".RData"))
+  modelCoefNames <- names(modelCoef)
+  
+  # Extract relevant coefficients
+  # indAttackHome <- grep("attackHome", modelCoefNames)
+  # indDefendHome <- grep("defendHome", modelCoefNames)
+  # indAttackAway <- grep("attackAway", modelCoefNames)
+  # indDefendAway <- grep("defendAway", modelCoefNames)
+  # attackHome <- (modelCoef[indAttackHome])[sapply(teamNames, function(x) grep(x, modelCoefNames[indAttackHome]))]
+  # defendHome <- (modelCoef[indDefendHome])[sapply(teamNames, function(x) grep(x, modelCoefNames[indDefendHome]))]
+  # attackAway <- (modelCoef[indAttackAway])[sapply(teamNames, function(x) grep(x, modelCoefNames[indAttackAway]))]
+  # defendAway <- (modelCoef[indDefendAway])[sapply(teamNames, function(x) grep(x, modelCoefNames[indDefendAway]))]
+  attackHome <- modelCoef[sapply(teamNames, function(x) which(modelCoefNames == paste0("attackHome", x)))]
+  defendHome <- modelCoef[sapply(teamNames, function(x) which(modelCoefNames == paste0("defendHome", x)))]
+  attackAway <- modelCoef[sapply(teamNames, function(x) which(modelCoefNames == paste0("attackAway", x)))]
+  defendAway <- modelCoef[sapply(teamNames, function(x) which(modelCoefNames == paste0("defendAway", x)))]
+  
+  # Print coefficients to file
+  fileName <- paste0("Printed model coefficients/modelCoefficients", leagueLabel, ".xml")
+  close(file(fileName, open = "w"))
+  fileConn <- file(fileName, open = "a")
+  writeLines(c("<?xml version=\"1.0\" encoding=\"utf-8\"?>", "<resources>", paste0("\t<string-array name=\"lambda_attack_home_", tolower(leagueLabel),"\">")), fileConn)
+  sapply(attackHome, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
+  writeLines(c("\t</string-array>", paste0("\t<string-array name=\"lambda_defence_home_", tolower(leagueLabel),"\">")), fileConn)
+  sapply(defendHome, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
+  writeLines(c("\t</string-array>", paste0("\t<string-array name=\"lambda_attack_away_", tolower(leagueLabel),"\">")), fileConn)
+  sapply(attackAway, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
+  writeLines(c("\t</string-array>", paste0("\t<string-array name=\"lambda_defence_away_", tolower(leagueLabel),"\">")), fileConn)
+  sapply(defendAway, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
+  writeLines(c("\t</string-array>", "</resources>"), fileConn)
+  close(fileConn)
+}
 

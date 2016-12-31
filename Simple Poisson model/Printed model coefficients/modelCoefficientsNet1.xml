@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="lambda_attack_home_net1">
+		<item>1.54366966137437</item>
+		<item>1.20819115984741</item>
+		<item>0.890304058615319</item>
+		<item>0.816189675298751</item>
+		<item>1.32264931551758</item>
+		<item>0.716582414290589</item>
+		<item>0.943479846660069</item>
+		<item>1.13331625703932</item>
+		<item>1.05749607405854</item>
+		<item>0.875874579297255</item>
+		<item>1.55285028944347</item>
+		<item>0.882928499682071</item>
+		<item>0.88218537826072</item>
+		<item>1.21484844283004</item>
+		<item>1.08851224731589</item>
+		<item>1.03258393699741</item>
+		<item>0.794155786765141</item>
+		<item>1.00288733332543</item>
+	</string-array>
+	<string-array name="lambda_defence_home_net1">
+		<item>1</item>
+		<item>1.9347613593621</item>
+		<item>2.39114609668397</item>
+		<item>2.94315960360691</item>
+		<item>1.45400665816464</item>
+		<item>2.45895318395933</item>
+		<item>1.93709318139655</item>
+		<item>2.37605488718356</item>
+		<item>2.29835338085818</item>
+		<item>2.37144109442487</item>
+		<item>1.49720313133173</item>
+		<item>2.07305862174649</item>
+		<item>1.95986031674339</item>
+		<item>1.73546861382056</item>
+		<item>2.14796422469322</item>
+		<item>1.94080652423095</item>
+		<item>2.78609654352844</item>
+		<item>2.21194484638444</item>
+	</string-array>
+	<string-array name="lambda_attack_away_net1">
+		<item>0.968544519108702</item>
+		<item>0.731279624192373</item>
+		<item>0.568977279397738</item>
+		<item>0.463246311215662</item>
+		<item>0.721565908057366</item>
+		<item>0.426753880332047</item>
+		<item>0.579039322092225</item>
+		<item>0.732890309865921</item>
+		<item>0.605062673603701</item>
+		<item>0.546785171197744</item>
+		<item>0.980448996946073</item>
+		<item>0.609700987965602</item>
+		<item>0.53677948873172</item>
+		<item>0.765717732359322</item>
+		<item>0.598297218456637</item>
+		<item>0.696909439028386</item>
+		<item>0.389783092274754</item>
+		<item>0.549824984901926</item>
+	</string-array>
+	<string-array name="lambda_defence_away_net1">
+		<item>1</item>
+		<item>1.48386107898516</item>
+		<item>1.81447981658823</item>
+		<item>1.89529524619859</item>
+		<item>1.33401304696639</item>
+		<item>1.98655695700839</item>
+		<item>1.75650312885294</item>
+		<item>1.71753304431799</item>
+		<item>1.87756632636363</item>
+		<item>1.80842498373494</item>
+		<item>1.18290669939005</item>
+		<item>2.11970385525919</item>
+		<item>1.92268975636811</item>
+		<item>1.33615075864705</item>
+		<item>1.57576372403973</item>
+		<item>1.52197874941973</item>
+		<item>1.96368413583274</item>
+		<item>1.59348381813959</item>
+	</string-array>
+</resources>

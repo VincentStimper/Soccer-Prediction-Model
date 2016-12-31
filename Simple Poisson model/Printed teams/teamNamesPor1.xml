@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_por1">
+		<item>Arouca</item>
+		<item>Belenenses</item>
+		<item>Benfica</item>
+		<item>Boavista</item>
+		<item>Chaves</item>
+		<item>Estoril</item>
+		<item>Feirense</item>
+		<item>Guimaraes</item>
+		<item>Maritimo</item>
+		<item>Moreirense</item>
+		<item>Nacional</item>
+		<item>Pacos Ferreira</item>
+		<item>Porto</item>
+		<item>Rio Ave</item>
+		<item>Setubal</item>
+		<item>Sp Braga</item>
+		<item>Sp Lisbon</item>
+		<item>Tondela</item>
+	</string-array>
+</resources>

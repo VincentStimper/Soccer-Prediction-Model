@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_ger1">
+		<item>Augsburg</item>
+		<item>Bayern Munich</item>
+		<item>Darmstadt</item>
+		<item>Dortmund</item>
+		<item>Ein Frankfurt</item>
+		<item>FC Koln</item>
+		<item>Freiburg</item>
+		<item>Hamburg</item>
+		<item>Hertha</item>
+		<item>Hoffenheim</item>
+		<item>Ingolstadt</item>
+		<item>Leverkusen</item>
+		<item>Mainz</item>
+		<item>M'gladbach</item>
+		<item>RB Leipzig</item>
+		<item>Schalke 04</item>
+		<item>Werder Bremen</item>
+		<item>Wolfsburg</item>
+	</string-array>
+</resources>

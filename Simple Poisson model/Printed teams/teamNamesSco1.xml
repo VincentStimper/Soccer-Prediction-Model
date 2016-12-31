@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_sco1">
+		<item>Aberdeen</item>
+		<item>Celtic</item>
+		<item>Dundee</item>
+		<item>Hamilton</item>
+		<item>Hearts</item>
+		<item>Inverness C</item>
+		<item>Kilmarnock</item>
+		<item>Motherwell</item>
+		<item>Partick</item>
+		<item>Rangers</item>
+		<item>Ross County</item>
+		<item>St Johnstone</item>
+	</string-array>
+</resources>

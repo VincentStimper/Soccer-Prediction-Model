@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_sco4">
+		<item>Annan Athletic</item>
+		<item>Arbroath</item>
+		<item>Berwick</item>
+		<item>Clyde</item>
+		<item>Cowdenbeath</item>
+		<item>Edinburgh City</item>
+		<item>Elgin</item>
+		<item>Forfar</item>
+		<item>Montrose</item>
+		<item>Stirling</item>
+	</string-array>
+</resources>

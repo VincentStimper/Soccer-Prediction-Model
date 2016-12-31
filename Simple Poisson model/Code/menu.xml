@@ -1,0 +1,102 @@
+<item android:title="@string/bel">
+	<menu>
+		<item
+			android:id="@+id/nav_bel1"
+			android:title="@string/bel1" />
+	</menu>
+</item>
+
+<item android:title="@string/eng">
+	<menu>
+		<item
+			android:id="@+id/nav_eng1"
+			android:title="@string/eng1" />
+		<item
+			android:id="@+id/nav_eng2"
+			android:title="@string/eng2" />
+		<item
+			android:id="@+id/nav_eng3"
+			android:title="@string/eng3" />
+		<item
+			android:id="@+id/nav_eng4"
+			android:title="@string/eng4" />
+	</menu>
+</item>
+
+<item android:title="@string/fra">
+	<menu>
+		<item
+			android:id="@+id/nav_fra1"
+			android:title="@string/fra1" />
+		<item
+			android:id="@+id/nav_fra2"
+			android:title="@string/fra2" />
+	</menu>
+</item>
+
+<item android:title="@string/ger">
+	<menu>
+		<item
+			android:id="@+id/nav_ger1"
+			android:title="@string/ger1" />
+		<item
+			android:id="@+id/nav_ger2"
+			android:title="@string/ger2" />
+	</menu>
+</item>
+
+<item android:title="@string/ita">
+	<menu>
+		<item
+			android:id="@+id/nav_ita1"
+			android:title="@string/ita1" />
+		<item
+			android:id="@+id/nav_ita2"
+			android:title="@string/ita2" />
+	</menu>
+</item>
+
+<item android:title="@string/net">
+	<menu>
+		<item
+			android:id="@+id/nav_net1"
+			android:title="@string/net1" />
+	</menu>
+</item>
+
+<item android:title="@string/por">
+	<menu>
+		<item
+			android:id="@+id/nav_por1"
+			android:title="@string/por1" />
+	</menu>
+</item>
+
+<item android:title="@string/sco">
+	<menu>
+		<item
+			android:id="@+id/nav_sco1"
+			android:title="@string/sco1" />
+		<item
+			android:id="@+id/nav_sco2"
+			android:title="@string/sco2" />
+		<item
+			android:id="@+id/nav_sco3"
+			android:title="@string/sco3" />
+		<item
+			android:id="@+id/nav_sco4"
+			android:title="@string/sco4" />
+	</menu>
+</item>
+
+<item android:title="@string/spa">
+	<menu>
+		<item
+			android:id="@+id/nav_spa1"
+			android:title="@string/spa1" />
+		<item
+			android:id="@+id/nav_spa2"
+			android:title="@string/spa2" />
+	</menu>
+</item>
+

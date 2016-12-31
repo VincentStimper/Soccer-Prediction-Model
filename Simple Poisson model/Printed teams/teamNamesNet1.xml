@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_net1">
+		<item>Ajax</item>
+		<item>AZ Alkmaar</item>
+		<item>Den Haag</item>
+		<item>Excelsior</item>
+		<item>Feyenoord</item>
+		<item>Go Ahead Eagles</item>
+		<item>Groningen</item>
+		<item>Heerenveen</item>
+		<item>Heracles</item>
+		<item>Nijmegen</item>
+		<item>PSV Eindhoven</item>
+		<item>Roda</item>
+		<item>Sparta Rotterdam</item>
+		<item>Twente</item>
+		<item>Utrecht</item>
+		<item>Vitesse</item>
+		<item>Willem II</item>
+		<item>Zwolle</item>
+	</string-array>
+</resources>

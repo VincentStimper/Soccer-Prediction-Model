@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_ger2">
+		<item>Bielefeld</item>
+		<item>Bochum</item>
+		<item>Braunschweig</item>
+		<item>Dresden</item>
+		<item>Erzgebirge Aue</item>
+		<item>Fortuna Dusseldorf</item>
+		<item>Greuther Furth</item>
+		<item>Hannover</item>
+		<item>Heidenheim</item>
+		<item>Kaiserslautern</item>
+		<item>Karlsruhe</item>
+		<item>Munich 1860</item>
+		<item>Nurnberg</item>
+		<item>Sandhausen</item>
+		<item>St Pauli</item>
+		<item>Stuttgart</item>
+		<item>Union Berlin</item>
+		<item>Wurzburger Kickers</item>
+	</string-array>
+</resources>

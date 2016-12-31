@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_ita2">
+		<item>Ascoli</item>
+		<item>Avellino</item>
+		<item>Bari</item>
+		<item>Benevento</item>
+		<item>Brescia</item>
+		<item>Carpi</item>
+		<item>Cesena</item>
+		<item>Cittadella</item>
+		<item>Frosinone</item>
+		<item>Latina</item>
+		<item>Novara</item>
+		<item>Perugia</item>
+		<item>Pisa</item>
+		<item>Pro Vercelli</item>
+		<item>Salernitana</item>
+		<item>Spal</item>
+		<item>Spezia</item>
+		<item>Ternana</item>
+		<item>Trapani</item>
+		<item>Verona</item>
+		<item>Vicenza</item>
+		<item>Virtus Entella</item>
+	</string-array>
+</resources>

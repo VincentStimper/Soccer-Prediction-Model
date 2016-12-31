@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_eng2">
+		<item>Aldershot</item>
+		<item>Barrow</item>
+		<item>Boreham Wood</item>
+		<item>Braintree Town</item>
+		<item>Bromley</item>
+		<item>Chester</item>
+		<item>Dag and Red</item>
+		<item>Dover Athletic</item>
+		<item>Eastleigh</item>
+		<item>Forest Green</item>
+		<item>Gateshead</item>
+		<item>Guiseley</item>
+		<item>Lincoln</item>
+		<item>Macclesfield</item>
+		<item>Maidstone</item>
+		<item>North Ferriby</item>
+		<item>Solihull</item>
+		<item>Southport</item>
+		<item>Sutton</item>
+		<item>Torquay</item>
+		<item>Tranmere</item>
+		<item>Woking</item>
+		<item>Wrexham</item>
+		<item>York</item>
+	</string-array>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="team_names_fra1">
+		<item>Angers</item>
+		<item>Bastia</item>
+		<item>Bordeaux</item>
+		<item>Caen</item>
+		<item>Dijon</item>
+		<item>Guingamp</item>
+		<item>Lille</item>
+		<item>Lorient</item>
+		<item>Lyon</item>
+		<item>Marseille</item>
+		<item>Metz</item>
+		<item>Monaco</item>
+		<item>Montpellier</item>
+		<item>Nancy</item>
+		<item>Nantes</item>
+		<item>Nice</item>
+		<item>Paris SG</item>
+		<item>Rennes</item>
+		<item>St Etienne</item>
+		<item>Toulouse</item>
+	</string-array>
+</resources>

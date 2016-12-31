@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="lambda_attack_home_bel1">
+		<item>1.53237324040266</item>
+		<item>0.837227623805478</item>
+		<item>1.50938474859832</item>
+		<item>0.979013861759347</item>
+		<item>1.30473063602925</item>
+		<item>1.27641660435517</item>
+		<item>1.14617347021484</item>
+		<item>0.957663675364081</item>
+		<item>1.04519466801757</item>
+		<item>0.837524319580807</item>
+		<item>1.27606162142117</item>
+		<item>1.23385879589627</item>
+		<item>0.84595719168895</item>
+		<item>0.756611771713423</item>
+		<item>1.13118122186839</item>
+		<item>0.934866882671937</item>
+	</string-array>
+	<string-array name="lambda_defence_home_bel1">
+		<item>1</item>
+		<item>1.56705169413656</item>
+		<item>1.07831981787255</item>
+		<item>2.5122135403466</item>
+		<item>1.34478992122233</item>
+		<item>1.41994997857577</item>
+		<item>1.4501921662517</item>
+		<item>1.58873175049164</item>
+		<item>1.53423674906805</item>
+		<item>2.2254781187535</item>
+		<item>1.90946905078323</item>
+		<item>1.26102256502081</item>
+		<item>1.93830585149744</item>
+		<item>1.69263029916215</item>
+		<item>1.64557484921401</item>
+		<item>1.84022435737257</item>
+	</string-array>
+	<string-array name="lambda_attack_away_bel1">
+		<item>1.04176407022697</item>
+		<item>0.622020377570731</item>
+		<item>1.07469661896117</item>
+		<item>0.639512396043903</item>
+		<item>0.79227238150585</item>
+		<item>0.897259610231521</item>
+		<item>0.591657717267085</item>
+		<item>0.792964408340031</item>
+		<item>0.692783465952343</item>
+		<item>0.640142046472237</item>
+		<item>0.682147866294138</item>
+		<item>0.88490043054254</item>
+		<item>0.480532022982127</item>
+		<item>0.624414329810666</item>
+		<item>0.79108596285375</item>
+		<item>0.642478506134738</item>
+	</string-array>
+	<string-array name="lambda_defence_away_bel1">
+		<item>1</item>
+		<item>1.45477181626516</item>
+		<item>1.26237837764959</item>
+		<item>1.87001533503999</item>
+		<item>1.26419605986523</item>
+		<item>1.1685395364132</item>
+		<item>1.31794862208441</item>
+		<item>1.27311888357547</item>
+		<item>1.59896917731051</item>
+		<item>1.72206184980074</item>
+		<item>1.42889193654214</item>
+		<item>1.31530306112029</item>
+		<item>1.61222725655571</item>
+		<item>1.69161906771444</item>
+		<item>1.3102071604542</item>
+		<item>1.9970405270769</item>
+	</string-array>
+</resources>
