@@ -1,7 +1,8 @@
 ## Preproccess files in a usable format
 
 years <- 10 : 17
-setwd("~/Downloads/")
+setwd(dirname(sys.frame(1)$ofile))
+setwd("Zip Archives/")
 countries <- NULL
 countries$labelFd <- c("B", "D", "F", "I", "N", "P", "SC", "SP", "E", "E")
 countries$labelVs <- c("Bel", "Ger", "Fra", "Ita", "Net", "Por", "Sco", "Spa", "Eng", "Eng")
@@ -16,10 +17,8 @@ for (y in years) {
   for (i in seq(countries$labelFd)) {
     for (j in seq(countries$numLeagues[i])) {
       file.copy(paste0(yearName, "/", countries$labelFd[i], toString(j + countries$biasFd[i]), ".csv"),
-                paste0("../Documents/Soccer Prediction/Model/Data/", countries$labelVs[i], toString(j + countries$biasVs[i]), "/", yearName, ".csv"), overwrite = TRUE)
+                paste0("../", countries$labelVs[i], toString(j + countries$biasVs[i]), "/", yearName, ".csv"), overwrite = TRUE)
     }
   }
-  file.copy(paste0(yearName, "/EC.csv"), paste0("../Documents/Soccer Prediction/Model/Data/Eng2/", yearName, ".csv"), overwrite = TRUE)
+  file.copy(paste0(yearName, "/EC.csv"), paste0("../Eng2/", yearName, ".csv"), overwrite = TRUE)
 }
-
-file.copy("test.txt", "../Documents/test.txt", overwrite = TRUE)
