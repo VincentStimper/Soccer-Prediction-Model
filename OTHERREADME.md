@@ -3,7 +3,7 @@ The app returns the expected result (rounded) and the probability of each possib
 $$
 P(a,b|\mathcal{A},\mathcal{B})=P_\text{m}(a,b|\mathcal{A},\mathcal{B})(1-p_\text{c})+P_\text{u}(a,b|\mathcal{A},\mathcal{B})p_\text{c}.
 $$
-Here, $P_\text{m}$ is the probability measure of the model, $P_\text{u}$ that one of the users guess and $p_\text{c}$ is the certainty of the users guess. We assume conditional independence of $a$ and $b$ given $\mathcal{A}$ and $\mathcal{B}$, i.e. $P_\text{m}(a,b|\mathcal{A},\mathcal{B})=P_\text{m}(a|\mathcal{A},\mathcal{B})P_\text{m}(b|\mathcal{A},\mathcal{B})$ and $P_\text{u}(a,b|\mathcal{A},\mathcal{B})=P_\text{u}(a|\mathcal{A},\mathcal{B})P_\text{u}(b|\mathcal{A},\mathcal{B})$.
+Here, $P_{\text{m}}$ is the probability measure of the model, $P_{\text{u}}$ that one of the users guess and $p_\text{c}$ is the certainty of the users guess. We assume conditional independence of $a$ and $b$ given $\mathcal{A}$ and $\mathcal{B}$, i.e. $P_\text{m}(a,b|\mathcal{A},\mathcal{B})=P_\text{m}(a|\mathcal{A},\mathcal{B})P_\text{m}(b|\mathcal{A},\mathcal{B})$ and $P_\text{u}(a,b|\mathcal{A},\mathcal{B})=P_\text{u}(a|\mathcal{A},\mathcal{B})P_\text{u}(b|\mathcal{A},\mathcal{B})$.
 To model the users guess it is convenient to choose a dirac distribution, i.e. if the user guesses $\mathcal{A}$ to score $k$ goals against $\mathcal{B}$
 $$
 P_\text{u}(a|\mathcal{A},\mathcal{B})=\delta_k(a)=\begin{cases}1 & $\text{if $a=k$}\\ 0 & \text{if $a\neq k$}\end{cases},
