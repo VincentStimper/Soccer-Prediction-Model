@@ -11,13 +11,8 @@ PrintTeams <- function(leagueLabel, year) {
   teamNames <- levels(as.factor(teams))
   
   # Print team names
-  fileName <- paste0("Printed teams/teamNames", leagueLabel, ".xml")
-  close(file(fileName, open = "w"))
-  fileConn <- file(fileName, open = "a")
-  writeLines(c("<?xml version=\"1.0\" encoding=\"utf-8\"?>", "<resources>", paste0("\t<string-array name=\"team_names_", tolower(leagueLabel), "\">")), fileConn)
-  sapply(teamNames, function(x) write(paste0("\t\t<item>", x, "</item>"), fileConn))
-  writeLines(c("\t</string-array>", "</resources>"), fileConn)
-  close(fileConn)
+  fileName <- paste0("teamNames/", tolower(leagueLabel), ".csv")
+  write.table(t(teamNames), file = fileName, col.names = FALSE, row.names = FALSE, sep = ",")
   
   # Return team names
   return(teamNames)
